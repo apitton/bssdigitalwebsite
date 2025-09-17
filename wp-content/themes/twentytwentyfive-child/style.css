@@ -1,0 +1,293 @@
+/*
+Theme Name: Twenty twenty child
+Description: My test child theme
+Author: Tonio Tompi
+Version: 1.0
+Template: twentytwentyfive
+*/
+
+header {
+    background-color: lightskyblue;    
+    display: flex;
+    align-items: center;
+    max-height: 100px;
+}
+header nav {
+    margin-right: 50px;
+}
+header nav span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;        
+}
+header > nav > span > .menuTitle {
+    min-width: 130px;    
+}
+header > nav > span:hover > .menuTitle {
+    background-color:brown;
+    border-radius: 10px 10px 0px 0px;
+    min-width: 130px;    
+}
+header > nav > span > .menuTitle:hover {
+    color: white;
+    transition: 0.5s;
+}
+header > nav > span > ul {
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: visible;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    z-index: -1;
+}
+header > nav > span:hover > ul {
+    opacity: 1;
+    transition: 0.5s;
+    background-color: blue;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 9;
+}
+header > nav > span:hover > ul > li:hover {
+    background-color: blueviolet;
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+    transition: 0.5s;
+}
+nav a:link {
+    text-decoration: none;    
+}
+nav a:focus {
+    outline: 0px;
+    color: white;
+}
+
+#logo, #logo img {
+    margin-right: auto;
+    max-height: 75px;
+}
+
+
+#navMenu {
+    margin-left: auto;
+}
+
+* { box-sizing: border-box; } 
+
+body {
+    margin: 0;
+}
+
+#textToType {
+    text-align: center;
+}
+#buttonContainer{
+    min-height:50px;    
+    padding:0px 10% 0px 10%;
+    display:flex;
+    align-content:space-between;
+    flex-wrap:nowrap;
+    justify-content:space-evenly;
+    background-color:lightgray;
+    padding: 2%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    margin-bottom: 5 px;
+}
+    
+.lbImg {        
+    max-width:50px;
+    max-height: 50px;
+}
+
+.button_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    background-color: white;
+    box-shadow: 5px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+.button_title:hover, .button_title.activeBox {
+    background-color: chartreuse;
+    box-shadow: 5px 5px rgba(0,0,0,0.2);
+    transform: scale(1.25);
+    transition: 1s;
+    border-radius: 10px;
+}
+
+#textArea {
+    position: relative;
+    max-height: 600px;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    align-items: flex-start;   /* align children to the top */
+    width: 80%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    overflow: hidden;          /* prevent scrollbars if you want clipping */
+    background-color: lightgray;
+    transition: 1s;
+}
+#textArea > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);       
+    max-width:100%;
+    max-height: 600px;
+}
+#textArea:has(#textBox0.activeParagraph) {
+    max-height: 100px;
+    min-height: 100px;
+    transition: 1s;
+}
+.sliderContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 3% 0% 3% 4%;
+    min-height: 300px;
+    max-height: 600px;
+    width: 100%;    
+    margin-right:auto;
+    margin-left: auto;
+}
+.sliderContainerVertical.is-layout-flow.wp-block-group-is-layout-flow {
+    display: flex;
+    flex-direction: column;        
+    max-height: 600px;
+    width: 100%;    
+    margin: auto auto auto auto;   
+    padding: 5px 5px 5px 5px;
+}
+.inactiveParagraph {    
+    transition-duration: 1s;
+    opacity: 0;
+    width:100%;
+}
+.inactiveParagraph.activeParagraph {    
+    opacity: 1;
+    transition-duration: 1s;
+}
+.fpButton.activeBox {
+    background-Color: red;
+}
+
+@keyframes bgfade {
+    from {
+        opacity: 0.3;
+        background-color: rgba(0,0,0,0.3);*/
+    };
+    to {
+        opacity: 1;
+        background-color: rgba(250,250,250,1);          
+    };
+}
+
+#iyjv {
+    animation: bgfade;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;    
+    /*background-color:rgba(0,0,0,1);*/
+}
+
+.inactive {
+    opacity: 0;
+} 
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.slider {
+    margin: 0% 4% 0% 0%;    
+    background-color: rgb(191, 236, 236);
+    display: flex;
+    flex-direction: column;    
+    min-width: 150px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0,0,0,0.2);    
+    flex: 1 1 0;    
+    max-height: 100%;
+    min-width: 20%;
+    z-index:1;
+}
+.sliderVertical {
+    margin: 2% 2% 2% 2%;    
+    background-color: rgb(191, 236, 236);
+    display: flex;
+    flex-direction: column;        
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0,0,0,0.2);    
+    flex: 1 1 auto;        
+    z-index:1;
+    text-align: center;
+    font-size: clamp(10px, 2vw, 20px);
+    padding-bottom: 3px;
+    min-height: 50px;
+}
+.sliderVertical h3 {
+    margin-bottom: 3px;
+}
+.arrow {
+    margin: 10px auto auto -15px;
+    position: relative;
+    width: 95%;
+}
+.arrowSign {    
+    /*top: 10px;
+    left: -10px;
+    max-width: 80%;*/
+    z-index: 2;
+    width: 100%;
+}
+.arrowText {
+    z-index: 20;
+    position: absolute;
+    top: -14px;
+    left: 40px;*/
+    width: 100%;
+    font-size: clamp(10px, 2vw, 20px);
+}
+.mainp {
+    max-height: 100%;    
+    margin-right: auto;
+    margin-left: auto;
+    flex: 1 1 0;    
+    font-size: clamp(12px, 2vw, 20px);
+    
+}
+.activeParagraph .slider1 {
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+.activeParagraph .slider2 {
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+.activeParagraph .slider3 {
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+}
+.activeParagraph .slider4 {
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    animation-fill-mode: both;
+}
