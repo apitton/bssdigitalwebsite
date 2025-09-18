@@ -25,7 +25,7 @@ jobs:
 
       - name: Upload zip to S3
         run: |
-          aws s3 cp app.zip s3://${{ secrets.S3_BUCKET }}/app-${{ github.sha }}.zip
+          aws s3 cp app.zip s3://elasticbeanstalk-eu-north-1-216989138178/app-${{ github.sha }}.zip
 
       - name: Create EB app version
         run: |
