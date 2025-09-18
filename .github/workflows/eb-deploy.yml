@@ -40,5 +40,5 @@ jobs:
       - name: Update EB environment
         run: |
           aws elasticbeanstalk update-environment \
-            --environment-name ${{ secrets.EB_ENV_NAME }} \
+            --environment-name Bssdigitalwebsite-env \
             --version-label ${{ github.sha }}
