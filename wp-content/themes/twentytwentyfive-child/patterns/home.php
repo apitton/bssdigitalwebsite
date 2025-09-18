@@ -25,7 +25,7 @@
     <div id="textArea">
         <div id="textBox0"  class="inactiveParagraph activeParagraph">
         <!-- wp:paragraph -->
-            <p id="textToType">Welcome to BSS Digital dude!| Please browse a category above| to discover our services*75*2</p>
+            <p id="textToType">Welcome to BSS Digital mate!| Please browse a category above| to discover our services*75*2</p>
         <!-- /wp:paragraph -->
         </div>        
 
