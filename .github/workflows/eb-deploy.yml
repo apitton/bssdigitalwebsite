@@ -15,10 +15,9 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: AKIATFBMPPUBAGOSAXU4
-          aws-region: eu-north-1
-          role-to-assume: "github-deployer"
+          aws-access-key-id: AKIATFBMPPUBED3J3E7X
+          aws-secret-access-key: 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
+          aws-region: eu-north-1          
 
       - name: Zip WordPress app
         run: |
