@@ -18,9 +18,10 @@ jobs:
           aws-access-key-id: AKIATFBMPPUBED3J3E7X
           aws-secret-access-key: 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
           aws-region: eu-north-1          
-
+      - name: Debug S3 buckets
+          run: aws s3 ls
       - name: Zip WordPress app
-        run: |
+          run: |
           zip -r app.zip . -x ".git/*" ".github/*"
 
       - name: Upload zip to S3
